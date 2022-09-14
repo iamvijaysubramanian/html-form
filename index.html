@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Survey Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header"><h1 id="title" class="text-center">Survey Form</h1></header>
+        <form id="survey-form">
+            <div class="form-group">
+            <div class="row">
+            <div class="col">
+                <label id="name-label" for="name">Firstname*</label>
+                <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+                <label id="name-label" for="name">Lastname*</label>
+                <input type="text" class="form-control" placeholder="Last name">
+            </div>
+            </div>
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">Gender*</label><br>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email*</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+          </div>
+          <div class="form-group">
+                <p>Your Experience*</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p>overall,how would you rate your experience with us?</p>
+          </div>      
+          <div class="form-group">
+                <p>How satisfied are you with*</p>
+          </div>
+          <div class="form-group">
+               <fieldset class="form-group row"></fieldset>
+               <legend class="col-form-label col-sm-2 float-sm-left pt-0">Purchase</legend>
+          <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+               <label class="form-check-label" for="inlineRadio1">very unsatisfied</label>
+          </div>
+          <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+               <label class="form-check-label" for="inlineRadio2">unsatisfied</label>
+          </div>
+          <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+               <label class="form-check-label" for="inlineRadio3">neutral</label>
+          </div>
+          <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+               <label class="form-check-label" for="inlineRadio3">satisfied</label>
+          </div>
+          <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+               <label class="form-check-label" for="inlineRadio3">very satisfied</label>
+          </div>
+               <fieldset class="form-group row"></fieldset>
+               <legend class="col-form-label col-sm-2 float-sm-left pt-0">Service</legend>
+          <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+               <label class="form-check-label" for="inlineRadio1">very unsatisfied</label>
+          </div>
+          <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+               <label class="form-check-label" for="inlineRadio2">unsatisfied</label>
+          </div>
+          <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+               <label class="form-check-label" for="inlineRadio3">neutral</label>
+          </div>
+          <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+               <label class="form-check-label" for="inlineRadio3">satisfied</label>
+          </div>
+          <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+               <label class="form-check-label" for="inlineRadio3">vary satisfied</label>
+          </div>
+               <fieldset class="form-group row"></fieldset>
+               <legend class="col-form-label col-sm-2 float-sm-left pt-0">Company Overall</legend>
+          <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+               <label class="form-check-label" for="inlineRadio1">very unsatisfied</label>
+          </div>
+          <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+               <label class="form-check-label" for="inlineRadio2">unsatisfied</label>
+          </div>
+          <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+               <label class="form-check-label" for="inlineRadio3">neutral</label>
+          </div>
+          <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+               <label class="form-check-label" for="inlineRadio3">satisfied</label>
+          </div>
+          <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+               <label class="form-check-label" for="inlineRadio3">very satisfied</label>
+          </div>
+          </div>
+          <div class="form-group">
+               <p>Any comments or suggestions?</p>
+               <textarea id="comments" class="input-textarea" name="comment"
+              placeholder="Enter your comment here...">
+            </textarea>
+          </div>
+          <div class="form-group">
+               <button type="submit" id="submit" class="submit-button">Submit</button>
+          </div>
+    </form>
+    </div>
+</body>
+</html>
